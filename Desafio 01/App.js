@@ -8,25 +8,25 @@ let idade = 25,
 console.log(idade + " anos e " + altura + " de altura");
 
 //3
-let valor = 50,
+let preco = 50,
   desconto = 0.2;
-let ValorDesconto = valor - valor * desconto;
-console.log(`O valor com desconto é de R$ ${ValorDesconto}`);
+let precoDesconto = preco - preco * desconto;
+console.log(`O preco com desconto é de R$ ${ValorDesconto}`);
 
 //4
 let temperatura = 30;
-if (temperatura > 30) {
+if (temperatura > 25) {
   console.log("Está calor!");
 } else {
-  console.log("Está frio!");
+  console.log("Está fresco!");
 }
 
 //5
 let idade2 = 18;
 if (idade2 >= 18) {
-  console.log("Maior de idade");
+  console.log("Você é maior de idade");
 } else {
-  console.log("Menor de idade");
+  console.log("Você é menor de idade");
 }
 
 //6
@@ -76,8 +76,11 @@ for (let i = 0; i <= 20; i++) {
 }
 
 //13
+function calcularAreaCirculo(raio) {
+  return Math.PI * Math.pow(raio, 2);
+}
 let raio = 5;
-let area = Math.PI * Math.pow(raio, 2);
+let area = calcularAreaCirculo(raio);
 console.log(`A área do círculo de raio ${raio} é ${area}`);
 
 //14
